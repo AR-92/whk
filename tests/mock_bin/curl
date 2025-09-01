@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Mock curl command for testing
+# Just echo the arguments and exit with 0
+
+echo "Mock curl called with: $*" >&2
+exit 0
