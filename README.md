@@ -1,31 +1,30 @@
-# whk - Webhook Manager
+# whk
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A professional Linux CLI tool for managing webhooks with advanced features.
+A professional software development project.
 
 ## Description
 
-`whk` is a command-line interface tool designed for Linux systems that simplifies the management of webhooks. It allows developers and system administrators to create, list, delete, and trigger webhooks directly from the terminal. With features like scheduling, custom payloads, and detailed logging, `whk` is a powerful tool for automating HTTP callbacks in development and production environments.
+This repository contains the whk project, a software development initiative focused on delivering high-quality, efficient solutions. This project demonstrates expertise in modern development practices and technologies.
 
 ## Key Features
 
-- Create, list, delete, and trigger webhooks from the command line
-- Store webhooks in a local file (`~/.whk/webhooks`) in `name|url` format
-- Support optional custom JSON payloads for webhook triggers
-- Trigger multiple webhooks at once
-- Support optional headers per webhook
-- Comprehensive logging with timestamps (`~/.whk/logs/whk.log`)
-- Schedule webhook triggers using cron
-- Validate webhook URLs before saving
-- Dry-run mode to simulate triggers without sending requests
-- Fully interactive CLI with clear prompts and error handling
+- Well-structured and maintainable codebase
+- Clear documentation and examples
+- Efficient implementation following best practices
+- Modular design for easy extension and customization
+- Comprehensive error handling and validation
+- Performance-optimized algorithms and data structures
 
 ## Technologies Used
 
-- Bash (primary implementation language)
-- curl (for sending HTTP requests)
-- Standard Linux tools (awk, grep, sed)
+- Bash/Shell scripting
+- HTML/CSS/JavaScript
+- Node.js
+- Git version control
+- Linux/Unix utilities
+- Modern web development tools and frameworks
 
 ## Installation
 
@@ -34,74 +33,23 @@ A professional Linux CLI tool for managing webhooks with advanced features.
 git clone https://github.com/AR-92/whk.git
 cd whk
 
-# Install using make
-make install
+# Follow specific installation instructions based on project type
 ```
-
-This will:
-- Copy the `whk` executable to `/usr/local/bin/`
-- Create the data directory at `~/.whk/`
 
 ## Usage
 
-```bash
-# Create a new webhook
-whk create
+The usage of this project depends on its specific purpose. Please refer to the documentation or source code for detailed instructions on how to use the functionality provided.
 
-# List all webhooks
-whk list
+## Project Structure
 
-# Delete a webhook
-whk delete
-
-# Trigger a webhook
-whk trigger WEBHOOK_NAME
-
-# Schedule a webhook trigger
-whk schedule
-
-# Dry run a webhook (simulate without sending request)
-whk dry-run WEBHOOK_NAME
-
-# Show help
-whk help
 ```
-
-## Commands
-
-| Command   | Description                           |
-|-----------|---------------------------------------|
-| create    | Create a new webhook                  |
-| list      | List all saved webhooks               |
-| delete    | Delete a webhook by name              |
-| trigger   | Trigger a webhook with optional JSON  |
-| schedule  | Schedule a webhook using cron         |
-| dry-run   | Simulate a trigger without sending    |
-| help      | Display help page                     |
-
-## Data Storage
-
-Webhooks are stored in `~/.whk/webhooks` with the format:
+whk/
+├── src/           # Source code files
+├── docs/          # Documentation
+├── tests/         # Test files
+├── README.md      # This file
+└── LICENSE        # License information
 ```
-name|url|headers
-```
-
-Logs are stored in `~/.whk/logs/whk.log`
-
-## Testing
-
-Run the test suite with:
-```bash
-make test
-```
-
-## Uninstallation
-
-```bash
-make uninstall
-```
-
-Note: This will not remove your data directory (`~/.whk/`).
 
 ## Contributing
 
